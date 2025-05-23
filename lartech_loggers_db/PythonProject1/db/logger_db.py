@@ -1,20 +1,14 @@
 import psycopg2
 from psycopg2 import sql
 from datetime import datetime
-
+from config import DB_CONFIG
 class LoggerDB:
     def __init__(self):
         self.connection = None
 
     def connect(self):
         try:
-            self.connection = psycopg2.connect(
-                user="postgres",
-                password="1234",
-                host="localhost",
-                port="5432",
-                database="postgres"
-            )
+            self.connection = psycopg2.connect(**DB_CONFIG)  # Используем конфигурацию
             return True
         except psycopg2.Error as e:
             print(f"Connection error: {e}")
