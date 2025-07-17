@@ -687,13 +687,6 @@ class SignalsView_subwindow(QMdiSubWindow):
             with open(filename, 'wb') as f:
                 f.write(byte_string)
 
-            # Показываем сообщение об успешном сохранении
-            msgBox = QMessageBox()
-            msgBox.setWindowTitle("Успех")
-            msgBox.setText(f"Данные points сохранены в файл: {filename}")
-            msgBox.setStandardButtons(QMessageBox.StandardButton.Ok)
-            msgBox.exec()
-
             self.parent.status_bar.showMessage(f"Данные points сохранены в файл: {filename}", 5000)
             logging.info(f"Сохранены данные points в файл: {filename}")
 
