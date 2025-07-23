@@ -2,7 +2,7 @@ import sys
 import os
 from PyQt6.QtWidgets import QWidget, QMainWindow, QApplication, QMdiArea, QMdiSubWindow, QToolBar, QVBoxLayout, \
     QLineEdit, QTableView, QAbstractItemView, QToolButton, QMessageBox, QScrollArea, QSlider, QHBoxLayout, QLabel, \
-    QCheckBox, QSizePolicy, QDialog, QFormLayout, QDialogButtonBox, QCalendarWidget, QTimeEdit, QSpinBox, QStatusBar
+    QCheckBox, QSizePolicy, QDialog, QFormLayout, QDialogButtonBox, QCalendarWidget, QTimeEdit, QSpinBox, QStatusBar, QPushButton
 from PyQt6.QtGui import QFontMetrics, QFont, QIcon, QAction, QPixmap
 from PyQt6.QtCore import Qt, QAbstractTableModel, QModelIndex, QSize, pyqtSignal, QDateTime, QDate, QTime
 from PyQt6 import QtCore
@@ -35,7 +35,6 @@ class DateTimeSelectionDialog(QDialog):
     """
     Диалоговое окно для выбора даты и времени с валидацией.
     """
-
     def __init__(self, initial_datetime=None, parent=None):
         super().__init__(parent)
         self.setWindowTitle("Выбор даты и времени начала")
@@ -157,12 +156,61 @@ class MainWindow(QMainWindow):
         self.RecordsViev_subwindow.record_list_signal.connect(
             self.SignalsView_subwindow.set_current_table_timestamp_list)
 
+        # Initialize window positions
+        self.tile_subwindows()
+
+    def tile_subwindows(self, restore_50_50=False, resize_from="left"):
+        """
+        Tile subwindows side by side, keeping them glued together.
+        """
+        mdi_geometry = self.mdi.geometry()
+        total_width = mdi_geometry.width()
+        total_height = mdi_geometry.height()
+
+        left_window = self.RecordsViev_subwindow
+        right_window = self.SignalsView_subwindow
+
+        if restore_50_50:
+            # Split 50/50
+            left_width = total_width // 2
+            right_width = total_width - left_width
+        else:
+            if resize_from == "left":
+                # Resizing initiated by left window
+                left_width = left_window.width()
+                if left_window.is_minimized:
+                    left_width = max(left_window.minimumWidth(), left_width)
+                right_width = total_width - left_width
+            else:
+                # Resizing initiated by right window
+                right_width = right_window.width()
+                left_width = total_width - right_width
+                if left_window.is_minimized:
+                    left_width = max(left_window.minimumWidth(), left_width)
+                    right_width = total_width - left_width
+
+        # Ensure minimum widths
+        left_min_width = left_window.minimumWidth()
+        right_min_width = right_window.minimumWidth()
+        if left_width < left_min_width:
+            left_width = left_min_width
+            right_width = total_width - left_width
+        if right_width < right_min_width:
+            right_width = right_min_width
+            left_width = total_width - right_width
+        if left_width < left_min_width:
+            left_width = left_min_width
+            right_width = total_width - left_width
+
+        # Set geometries to keep windows glued
+        left_window.setGeometry(0, 0, left_width, total_height)
+        right_window.setGeometry(left_width, 0, right_width, total_height)
+
     def resizeEvent(self, event):
-        geometry = self.frameGeometry()
-        half_width = int(geometry.width() / 2)
-        height = geometry.height()
-        self.RecordsViev_subwindow.setGeometry(0, 0, half_width, height - 50)
-        self.SignalsView_subwindow.setGeometry(half_width, 0, half_width, height - 50)
+        """
+        Synchronize subwindow resizing with main window.
+        """
+        self.tile_subwindows(restore_50_50=self.RecordsViev_subwindow.is_minimized)
         QMainWindow.resizeEvent(self, event)
 
 
@@ -171,7 +219,8 @@ class MainWindow(QMainWindow):
 class RecordsTableModel(QAbstractTableModel):
     def __init__(self, data):
         super().__init__()
-        self._data = data
+        self._full_data = data  # Store full dataset
+        self._data = data  # Displayed (filtered) data
 
     hheaders = ["Устройство", "Ш, Д", "Число записей", "Первая запись", "Последняя запись"]
 
@@ -196,6 +245,7 @@ class RecordsTableModel(QAbstractTableModel):
 
     def insertRow(self, row, row_data, parent=QModelIndex()):
         self.beginInsertRows(parent, row, row)
+        self._full_data.insert(row, row_data)
         self._data.insert(row, row_data)
         self.endInsertRows()
         return True
@@ -207,6 +257,18 @@ class RecordsTableModel(QAbstractTableModel):
         self.endRemoveRows()
         return True
 
+    def filter_by_device(self, search_text):
+        """
+        Фильтрует таблицу по частичному совпадению в первом столбце (Устройство).
+        """
+        self.beginResetModel()
+        if not search_text:
+            self._data = self._full_data.copy()  # Restore full data if search is empty
+        else:
+            search_text = search_text.lower()
+            self._data = [row for row in self._full_data if search_text in row[0].lower()]
+        self.endResetModel()
+
 
 # =================================================================================================================================
 
@@ -215,9 +277,13 @@ class RecordsViev_subwindow(QMdiSubWindow):
     record_list_signal = QtCore.pyqtSignal(list)
 
     def __init__(self, parent=None):
-        super().__init__()
+        super().__init__(parent)
         self.parent = parent
         self.setWindowTitle("Выбор источника")
+
+        # Allow resizing to smaller widths
+        self.setMinimumWidth(100)  # Reasonable minimum to prevent collapse
+        self.is_minimized = False  # Track whether window is minimized to first column
 
         self.model = RecordsTableModel([["1", "2", "3", "4", "5"]])
         self.table_view = QTableView()
@@ -230,10 +296,35 @@ class RecordsViev_subwindow(QMdiSubWindow):
         selection_model = self.table_view.selectionModel()
         selection_model.selectionChanged.connect(self.row_selection_event_handler)
 
-        layout = QVBoxLayout(self)
-        layout.addWidget(self.table_view)
+        # Add search field
+        self.search_edit = ResizableLineEdit()
+        self.search_edit.setPlaceholderText("Поиск по устройству")
+        self.search_edit.setToolTip("Введите часть имени устройства для фильтрации")
+        self.search_edit.setMinimumWidth(70)
+        search_icon = QIcon("./icons/search.png")  # Ensure this icon exists
+        search_action = QAction(search_icon, "Поиск устройства", self.search_edit)
+        self.search_edit.addAction(search_action, QLineEdit.ActionPosition.LeadingPosition)
+        self.search_edit.textChanged.connect(self.filter_table)
+
+        # Add resize button
+        self.resize_button = QPushButton("↔")
+        self.resize_button.setToolTip("Изменить размер окна")
+        self.resize_button.setFixedWidth(30)
+        self.resize_button.clicked.connect(self.toggle_resize)
+
+        # Layout
+        main_layout = QVBoxLayout()
+        search_layout = QHBoxLayout()
+        search_layout.addWidget(self.search_edit)
+        search_layout.addStretch()  # Push search field to the left
+        main_layout.addLayout(search_layout)
+        table_layout = QHBoxLayout()
+        table_layout.addWidget(self.table_view)
+        table_layout.addWidget(self.resize_button, alignment=Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignRight)
+        main_layout.addLayout(table_layout)
+
         self.MainWidget = QWidget()
-        self.MainWidget.setLayout(layout)
+        self.MainWidget.setLayout(main_layout)
         self.setWidget(self.MainWidget)
 
         cnt = self.model.rowCount()
@@ -263,6 +354,7 @@ class RecordsViev_subwindow(QMdiSubWindow):
         row = [device, f"{gps_latitude}, {gps_longitude}", record_num, first_records, last_records]
         self.model.insertRow(self.model.rowCount(), row)
         self.table_view.resizeColumnsToContents()
+        self.filter_table(self.search_edit.text())  # Reapply filter after adding new row
 
     def row_selection_event_handler(self, selected, deselected):
         if selected:
@@ -287,6 +379,58 @@ class RecordsViev_subwindow(QMdiSubWindow):
     def on_last_rec_message(self, table_name, column_list, result_dict, rec_num):
         self.data_to_plot_signal.emit(table_name, column_list, result_dict, rec_num)
 
+    def filter_table(self, text):
+        """
+        Фильтрует таблицу по введенному тексту в поле поиска.
+        """
+        self.model.filter_by_device(text)
+        self.table_view.resizeColumnsToContents()
+        # Clear selection if no rows are displayed
+        if self.model.rowCount() == 0:
+            self.table_view.clearSelection()
+
+    def toggle_resize(self):
+        """
+        Переключает между минимизацией до ширины первого столбца и восстановлением 50/50 компоновки.
+        """
+        self.table_view.resizeColumnsToContents()
+        first_col_width = self.table_view.columnWidth(0)
+        padding = 70  # Учитывает кнопку и декорации
+        min_width = max(first_col_width + padding, 100)
+
+        if not self.is_minimized:
+            # Минимизировать до ширины первого столбца
+            self.setMinimumWidth(min_width)
+            self.resize(min_width, self.height())
+            self.is_minimized = True
+        else:
+            # Восстановить 50/50 компоновку
+            mdi_width = self.parent.mdi.geometry().width()
+            target_width = mdi_width // 2
+            self.setMinimumWidth(100)  # Сброс минимальной ширины
+            self.resize(target_width, self.height())
+            self.is_minimized = False
+
+        # Обновить позиции окон
+        self.parent.tile_subwindows(restore_50_50=not self.is_minimized, resize_from="left")
+
+    def moveEvent(self, event):
+        """
+        Перемещает оба окна вместе, сохраняя их склеенное состояние.
+        """
+        if self.is_minimized:
+            # Убедиться в минимальной ширине при минимизации
+            self.setMinimumWidth(max(self.table_view.columnWidth(0) + 70, 100))
+        self.parent.tile_subwindows(restore_50_50=self.is_minimized, resize_from="left")
+        super().moveEvent(event)
+
+    def resizeEvent(self, event):
+        """
+        Корректирует правое окно при изменении размера левого окна.
+        """
+        self.parent.tile_subwindows(restore_50_50=self.is_minimized, resize_from="left")
+        super().resizeEvent(event)
+
 
 # =================================================================================================================================
 
@@ -295,6 +439,7 @@ class SignalsView_subwindow(QMdiSubWindow):
         super().__init__()
         self.parent = parent
         self.setWindowTitle("Просмотр сигналов")
+        self.setMinimumWidth(100)  # Reasonable minimum to prevent collapse
 
         self.current_current_table_timestamp_list = []
         self.current_rec_num = 0
@@ -451,7 +596,7 @@ class SignalsView_subwindow(QMdiSubWindow):
         filter_action = QAction(filterIco, "Фильтр каналов", self.channelsFilterEdit)
         self.channelsFilterEdit.addAction(filter_action, QLineEdit.ActionPosition.LeadingPosition)
         self.plot_params_toolbar.addWidget(self.channelsFilterEdit)
-        self.channelsFilterEdit.textChanged.connect(self.on_chanell_filter_changed)
+        self.channelsFilterEdit.textChanged.connect(self.on_channel_filter_changed)
 
         self.plot_params_toolbar.addSeparator()
 
@@ -568,7 +713,9 @@ class SignalsView_subwindow(QMdiSubWindow):
         self.current_freq_range = range
 
     def update_button_states(self):
-        """Enable or disable navigation and save buttons based on data availability."""
+        """
+        Включает или отключает кнопки навигации и сохранения в зависимости от доступности данных.
+        """
         has_data = len(self.current_device) > 2 and len(self.colnameList) > 1 and len(
             self.current_current_table_timestamp_list) > 0
         self.firstButton.setEnabled(has_data and self.current_rec_num > 1)
@@ -800,7 +947,7 @@ class SignalsView_subwindow(QMdiSubWindow):
                 f"Загрузка осциллограммы с {selected_dt.toString('dd.MM.yyyy HH:mm:ss')}", 5000
             )
 
-    def on_chanell_filter_changed(self, text):
+    def on_channel_filter_changed(self, text):
         mask = cdp.pars_cipher_diapasons_to_boolmask(text, 8)[1:]
 
         for i in range(len(self.channel_boolmask)):
@@ -902,6 +1049,20 @@ class SignalsView_subwindow(QMdiSubWindow):
             if type(self.plot_array[i][0]) != int:
                 self.plot_array[i][0].autoRange()
                 self.plot_array[i][1].autoRange()
+
+    def moveEvent(self, event):
+        """
+        Перемещает оба окна вместе, сохраняя их склеенное состояние.
+        """
+        self.parent.tile_subwindows(restore_50_50=self.parent.RecordsViev_subwindow.is_minimized, resize_from="left")
+        super().moveEvent(event)
+
+    def resizeEvent(self, event):
+        """
+        Корректирует левое окно при изменении размера правого окна.
+        """
+        self.parent.tile_subwindows(restore_50_50=self.parent.RecordsViev_subwindow.is_minimized, resize_from="right")
+        super().resizeEvent(event)
 
 
 # =================================================================================================================================
