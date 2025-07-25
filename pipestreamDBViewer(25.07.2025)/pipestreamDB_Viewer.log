@@ -1,0 +1,25 @@
+2025-07-25 16:28:22,398 INFO Старт программы
+2025-07-25 16:28:22,495 INFO Старт потока вычитыания списка таблиц и их параметров
+2025-07-25 16:28:22,540 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-07-25 16:28:22,611 INFO Соединение с PostgreSQL закрыто
+2025-07-25 16:28:37,043 INFO Вычитывание последней записи logger_860384060670350_data в потоке
+2025-07-25 16:28:37,043 INFO Вычитывание списка записей таблицы logger_860384060670350_data в потоке (фоном)
+2025-07-25 16:28:37,089 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-07-25 16:28:37,089 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-07-25 16:28:37,094 INFO Соединение с PostgreSQL закрыто
+2025-07-25 16:28:37,108 INFO Соединение с PostgreSQL закрыто
+2025-07-25 16:28:37,182 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-07-25 16:29:34,388 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-07-25 16:29:34,405 INFO Соединение с PostgreSQL закрыто
+2025-07-25 16:29:38,229 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-07-25 16:29:38,230 INFO Соединение с PostgreSQL закрыто
+2025-07-25 16:29:41,637 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-07-25 16:29:41,652 INFO Соединение с PostgreSQL закрыто
+2025-07-25 16:29:46,319 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-07-25 16:29:46,320 INFO Соединение с PostgreSQL закрыто
+2025-07-25 16:29:51,053 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-07-25 16:29:51,068 INFO Соединение с PostgreSQL закрыто
+2025-07-25 16:29:57,982 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-07-25 16:29:57,984 INFO Соединение с PostgreSQL закрыто
+2025-07-25 16:30:01,941 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-07-25 16:30:01,943 INFO Соединение с PostgreSQL закрыто
