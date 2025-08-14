@@ -1,0 +1,27 @@
+2025-08-15 01:28:29,071 INFO Старт программы
+2025-08-15 01:28:29,138 INFO Старт потока вычитыания списка таблиц и их параметров
+2025-08-15 01:28:29,174 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:29,232 INFO Соединение с PostgreSQL закрыто
+2025-08-15 01:28:31,019 INFO Вычитывание последней записи logger_860384060670350_data в потоке
+2025-08-15 01:28:31,019 INFO Вычитывание списка записей таблицы logger_860384060670350_data в потоке (фоном)
+2025-08-15 01:28:31,059 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:31,059 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:31,066 INFO Соединение с PostgreSQL закрыто
+2025-08-15 01:28:31,075 INFO Соединение с PostgreSQL закрыто
+2025-08-15 01:28:31,148 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:33,306 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:35,512 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:37,740 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:39,880 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:42,018 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:44,160 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:46,268 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:48,352 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:50,481 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:52,594 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:54,700 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:56,828 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:28:58,961 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:29:01,208 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:30:11,625 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-08-15 01:30:11,641 INFO Соединение с PostgreSQL закрыто
