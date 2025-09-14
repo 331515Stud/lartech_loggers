@@ -1,0 +1,756 @@
+2025-09-14 23:21:53,040 INFO Старт программы
+2025-09-14 23:21:53,098 INFO Старт потока вычитыания списка таблиц и их параметров
+2025-09-14 23:21:53,146 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:21:53,193 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:21:58,490 INFO Вычитывание списка записей таблицы logger_866442072092510_data в потоке (фоном)
+2025-09-14 23:21:58,490 INFO Вычитывание последней записи logger_866442072092510_data в потоке
+2025-09-14 23:21:58,534 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:21:58,536 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:21:58,539 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:21:58,543 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:21:58,609 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:00,360 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:02,004 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:03,649 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:04,924 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:06,539 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:08,180 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:08,323 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:08,415 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:09,951 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:11,616 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:15,559 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:15,560 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:15,762 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:15,763 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:15,943 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:15,959 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:16,474 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:16,475 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:16,656 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:16,663 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:16,840 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:16,841 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:17,026 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:17,027 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:17,209 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:17,224 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:17,397 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:17,413 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:17,581 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:17,582 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:17,761 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:17,772 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:17,943 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:17,944 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:18,131 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:18,148 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:18,165 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:18,166 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:18,422 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:18,438 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:18,615 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:18,628 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:18,796 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:18,798 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:20,857 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:20,867 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:21,053 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:21,068 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:21,254 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:21,256 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:21,557 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:21,558 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:21,737 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:21,752 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:21,931 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:21,932 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:22,119 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:22,121 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:22,305 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:22,306 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:22,491 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:22,492 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:22,678 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:22,680 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:22,866 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:22,868 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:23,067 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:23,081 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:23,252 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:23,267 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:23,435 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:23,436 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:23,620 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:23,621 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:23,804 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:23,805 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:23,988 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:24,000 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:24,178 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:24,179 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:24,373 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:24,388 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:24,561 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:24,575 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:24,748 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:24,763 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:24,930 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:24,932 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:25,120 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:25,121 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:25,332 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:25,333 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:25,532 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:25,533 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:25,721 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:25,733 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:25,906 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:25,907 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:26,106 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:26,107 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:26,294 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:26,312 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:26,486 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:26,488 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:26,686 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:26,687 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:26,876 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:26,887 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:27,067 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:27,068 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:27,267 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:27,276 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:27,466 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:27,467 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:27,650 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:27,666 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:27,850 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:27,852 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:28,037 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:28,054 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:28,230 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:28,232 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:28,421 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:28,431 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:28,610 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:28,612 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:28,840 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:28,853 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:29,039 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:29,040 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:29,240 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:29,241 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:29,427 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:29,429 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:29,632 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:29,633 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:29,833 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:29,850 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:30,042 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:30,051 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:30,262 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:30,264 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:30,503 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:30,504 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:30,732 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:30,733 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:30,943 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:30,945 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:31,162 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:31,178 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:31,380 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:31,395 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:31,621 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:31,622 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:31,876 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:31,878 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:32,146 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:32,147 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:32,405 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:32,406 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:32,624 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:32,639 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:32,858 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:32,863 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:33,073 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:33,074 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:33,294 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:33,301 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:33,505 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:33,521 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:33,728 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:33,729 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:33,969 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:33,970 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:34,193 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:34,205 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:34,447 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:34,448 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:34,691 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:34,692 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:34,911 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:34,922 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:35,135 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:35,137 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:35,361 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:35,369 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:35,580 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:35,587 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:35,792 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:35,794 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:36,030 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:36,031 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:36,222 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:36,223 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:36,442 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:36,443 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:36,660 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:36,661 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:36,904 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:36,914 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:37,109 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:37,117 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:37,342 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:37,351 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:37,534 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:37,552 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:37,734 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:37,735 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:37,943 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:37,958 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:38,155 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:38,162 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:38,385 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:38,396 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:38,610 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:38,612 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:38,812 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:38,818 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:39,044 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:39,053 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:39,267 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:39,268 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:39,493 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:39,494 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:39,731 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:39,732 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:39,931 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:39,933 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:40,185 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:40,202 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:40,431 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:40,433 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:40,651 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:40,659 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:40,867 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:40,868 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:41,077 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:41,093 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:41,271 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:41,280 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:41,506 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:41,507 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:41,724 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:41,726 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:41,957 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:41,967 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:42,181 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:42,183 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:42,390 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:42,391 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:42,622 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:42,623 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:42,826 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:42,827 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:43,035 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:43,048 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:43,255 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:43,268 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:43,470 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:43,485 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:43,681 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:43,682 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:43,911 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:43,912 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:44,214 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:44,215 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:44,401 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:44,402 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:44,587 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:44,589 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:44,804 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:44,813 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:45,027 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:45,044 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:45,250 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:45,264 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:45,472 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:45,473 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:45,713 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:45,729 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:45,946 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:45,948 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:46,169 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:46,187 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:46,402 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:46,404 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:46,727 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:46,729 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:46,922 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:46,924 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:47,115 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:47,125 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:47,354 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:47,369 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:47,574 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:47,589 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:47,768 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:47,769 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:48,001 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:48,002 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:48,227 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:48,228 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:48,446 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:48,448 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:48,653 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:48,655 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:48,901 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:48,916 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:49,120 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:49,121 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:49,343 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:49,344 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:49,590 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:49,606 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:49,807 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:49,808 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:50,041 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:50,049 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:50,290 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:50,292 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:50,528 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:50,544 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:50,759 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:50,761 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:50,987 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:50,998 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:51,195 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:51,196 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:51,400 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:51,402 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:51,603 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:51,604 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:51,807 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:51,809 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:52,007 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:52,015 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:52,212 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:52,228 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:52,419 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:52,435 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:52,621 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:52,636 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:52,829 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:52,843 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:53,038 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:53,045 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:53,231 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:53,233 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:53,537 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:53,538 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:53,723 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:53,724 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:53,909 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:53,916 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:54,110 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:54,111 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:54,156 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:54,157 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:54,460 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:54,462 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:54,707 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:54,709 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:54,724 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:54,726 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:54,985 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:54,995 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:55,006 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:55,008 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:55,274 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:55,289 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:55,463 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:55,476 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:55,664 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:55,666 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:55,865 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:55,867 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:56,054 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:56,056 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:56,244 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:56,245 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:56,482 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:56,496 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:56,684 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:56,685 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:56,877 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:56,879 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:57,075 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:57,087 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:57,268 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:57,269 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:58,109 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:58,115 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:22:58,935 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:22:58,936 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:00,825 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:00,834 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:01,052 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:01,068 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:01,282 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:01,284 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:01,477 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:01,479 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:01,673 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:01,674 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:01,859 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:01,860 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:02,045 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:02,047 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:06,330 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:06,339 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:07,014 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:07,015 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:07,605 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:07,618 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:08,183 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:08,193 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:12,616 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:12,618 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:13,353 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:13,355 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:14,109 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:14,115 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:14,806 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:14,814 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:16,546 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:16,547 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:17,320 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:17,321 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:17,966 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:17,982 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:18,572 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:18,580 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:19,838 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:19,839 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:22,805 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:22,821 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:31,928 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:31,929 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:32,561 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:32,575 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:33,144 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:33,159 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:33,617 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:33,632 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:34,166 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:34,179 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:23:34,660 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:23:34,675 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:24:44,156 INFO Вычитывание последней записи logger_860384060670350_data в потоке
+2025-09-14 23:24:44,157 INFO Вычитывание списка записей таблицы logger_860384060670350_data в потоке (фоном)
+2025-09-14 23:24:44,208 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:24:44,214 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:24:44,215 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:24:44,230 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:24:44,304 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:24:46,131 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:24:47,788 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:24:49,416 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:24:51,063 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:24:52,718 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:24:54,402 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:24:56,108 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:24:57,751 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:24:59,493 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:01,145 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:02,856 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:04,570 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:06,307 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:08,002 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:09,015 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:09,016 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:11,185 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:11,186 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:26,119 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:26,120 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:26,749 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:26,764 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:26,952 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:26,954 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:27,143 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:27,158 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:27,328 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:27,342 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:27,509 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:27,520 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:27,687 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:27,702 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:27,883 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:27,884 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:28,065 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:28,080 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:28,115 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:28,116 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:28,374 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:28,375 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:28,560 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:28,577 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:28,741 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:28,750 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:28,930 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:28,932 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:28,970 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:28,973 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:29,245 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:29,247 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:29,440 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:29,441 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:29,631 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:29,639 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:29,815 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:29,816 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:29,993 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:29,999 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:30,186 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:30,202 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:30,364 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:30,366 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:30,543 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:30,545 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:30,723 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:30,724 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:30,911 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:30,913 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:31,096 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:31,097 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:31,294 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:31,311 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:31,479 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:31,481 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:31,661 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:31,674 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:31,846 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:31,848 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:32,036 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:32,052 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:32,242 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:32,255 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:32,437 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:32,456 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:32,663 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:32,676 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:32,858 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:32,860 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:33,048 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:33,049 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:33,239 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:33,240 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:33,445 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:33,446 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:33,640 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:33,642 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:33,833 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:33,849 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:34,047 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:34,053 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:34,257 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:34,271 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:34,476 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:34,477 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:34,679 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:34,691 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:34,891 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:34,908 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:35,114 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:35,116 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:35,333 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:35,344 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:35,563 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:35,579 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:35,772 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:35,782 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:36,000 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:36,002 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:36,214 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:36,215 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:36,434 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:36,449 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:36,614 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:36,615 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:36,799 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:36,809 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:36,993 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:36,994 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:37,222 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:37,224 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:25:37,440 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:25:37,441 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:05,547 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:05,549 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:05,763 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:05,765 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:06,156 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:06,161 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:06,366 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:06,380 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:06,598 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:06,599 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:06,821 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:06,823 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:07,008 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:07,009 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:11,451 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:11,453 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:13,475 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:13,476 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:16,050 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:16,051 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:16,218 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:16,219 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:16,387 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:16,400 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:16,555 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:16,570 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:16,732 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:16,742 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:16,913 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:16,914 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:17,083 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:17,085 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:17,261 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:17,263 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:17,430 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:17,445 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:17,597 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:17,598 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:17,979 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:17,994 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:18,323 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:18,324 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:18,509 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:18,524 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:18,688 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:18,698 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:18,883 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:18,898 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:19,074 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:19,076 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:19,266 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:19,267 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:25,559 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:25,571 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:25,769 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:25,776 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:25,990 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:25,992 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:26,206 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:26,208 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:26,423 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:26,425 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:26,664 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:26,665 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:26,918 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:26,919 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:27,144 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:27,146 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:27,354 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:27,355 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:27,566 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:27,581 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:27,767 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:27,782 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:32:28,001 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:32:28,016 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:33:32,576 INFO Вычитывание последней записи logger_867584034033063_data в потоке
+2025-09-14 23:33:32,576 INFO Вычитывание списка записей таблицы logger_867584034033063_data в потоке (фоном)
+2025-09-14 23:33:32,632 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:32,633 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:33:32,638 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:32,648 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:33:32,727 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:45,715 INFO Вычитывание последней записи logger_866442072073395_data в потоке
+2025-09-14 23:33:45,716 INFO Вычитывание списка записей таблицы logger_866442072073395_data в потоке (фоном)
+2025-09-14 23:33:45,803 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:45,817 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:45,833 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:33:45,833 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:33:45,883 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:47,461 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:49,060 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:50,620 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:52,163 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:53,705 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:54,975 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:55,183 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:56,602 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:58,137 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:33:59,720 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:00,189 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:01,357 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:02,247 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:03,050 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:03,695 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:04,693 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:06,339 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:07,873 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:09,409 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:10,945 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:12,470 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:14,022 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:15,566 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:17,122 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:18,666 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:20,209 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:34:21,721 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:34,687 INFO Вычитывание последней записи logger_866442072075929_data в потоке
+2025-09-14 23:43:34,689 INFO Вычитывание списка записей таблицы logger_866442072075929_data в потоке (фоном)
+2025-09-14 23:43:34,752 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:34,755 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:34,757 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:43:34,778 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:43:34,843 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:36,415 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:37,978 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:39,563 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:41,167 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:42,746 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:44,324 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:45,896 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:47,472 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:49,125 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:50,683 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:57,439 INFO Вычитывание последней записи logger_866442072079350_data в потоке
+2025-09-14 23:43:57,439 INFO Вычитывание списка записей таблицы logger_866442072079350_data в потоке (фоном)
+2025-09-14 23:43:57,496 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:57,499 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:57,501 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:43:57,523 INFO Соединение с PostgreSQL закрыто
+2025-09-14 23:43:57,577 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:43:59,129 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:00,716 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:02,283 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:03,815 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:05,369 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:06,926 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:08,461 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:10,004 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:11,554 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:13,089 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:14,629 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:16,160 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:17,710 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:19,271 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:20,387 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:20,495 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
+2025-09-14 23:44:20,575 INFO Подключение к БД: ('PostgreSQL 16.8, compiled by Visual C++ build 1925, 64-bit',)
