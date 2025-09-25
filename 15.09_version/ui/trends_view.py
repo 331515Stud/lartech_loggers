@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QMdiSubWindow, QWidget, QHBoxLayout, QVBoxLayout, QFrame, QTextEdit, QToolButton, QProgressBar, QLabel, QApplication, QToolBar, QSizePolicy
+from PyQt6.QtWidgets import QMdiSubWindow, QWidget, QHBoxLayout, QVBoxLayout, QFrame, QToolButton, QProgressBar, QLabel, QApplication, QSizePolicy
 from PyQt6.QtCore import Qt, QThread, pyqtSignal, QSize
 from PyQt6.QtGui import QIcon, QCursor, QPalette, QColor
 import pyqtgraph as pg
@@ -7,21 +7,16 @@ import numpy as np
 from Lib import pipestreamdbread as pdb
 import logging
 from datetime import datetime
-import math
 import warnings
 import os
-import uuid
 
-# Настройка pyqtgraph для улучшенного отображения графиков
+
 pg.setConfigOptions(antialias=True, background='k', foreground='w')
 warnings.filterwarnings("ignore", category=UserWarning, module="pyqtgraph")
 
-def RMS(sig):
-    l = len(sig)
-    if l == 0:
-        return 0
-    summ = sum(x ** 2 for x in sig)
-    return math.sqrt(summ / l)
+# Константы для преобразования ADC
+ADC_full_scale_V = 0.93
+ADC_raw_max = (1 << 21)
 
 class CustomInfiniteLine(pg.InfiniteLine):
     def __init__(self, *args, **kwargs):
@@ -46,17 +41,13 @@ class CustomInfiniteLine(pg.InfiniteLine):
             QApplication.restoreOverrideCursor()
 
 class DataLoaderThread(QThread):
-    data_loaded = pyqtSignal(list, list, int, int)
+    data_processed = pyqtSignal(pd.DataFrame)
     error_occurred = pyqtSignal(str)
     progress_updated = pyqtSignal(int)
-    finished_loading_chunk = pyqtSignal()
 
-    def __init__(self, table_name, chunk_index, chunk_size=100, total_records=None, parent=None):
+    def __init__(self, table_name, parent=None):
         super().__init__(parent)
         self.table_name = table_name
-        self.chunk_index = chunk_index
-        self.chunk_size = chunk_size
-        self.total_records = total_records
 
     def run(self):
         try:
@@ -65,10 +56,11 @@ class DataLoaderThread(QThread):
                 self.error_occurred.emit(f"Ошибка подключения к БД: {status}")
                 return
 
+            # Проверка наличия столбцов
             colnames_list = pdb.get_column_names(cursor, self.table_name)
-            required_columns = ['timestamp', 'points', 'mask', 'npoints',
-                               'cfg_voltage_multiplier', 'cfg_voltage_divider',
-                               'cfg_current_multiplier', 'cfg_current_divider']
+            rms_colnames = ["timestamp", "add_data_0", "add_data_1", "add_data_2", "add_data_3", "add_data_4", "add_data_5"]
+            multypliers_colnames = ["cfg_voltage_multiplier", "cfg_voltage_divider", "cfg_current_multiplier", "cfg_current_divider"]
+            required_columns = rms_colnames + multypliers_colnames
 
             if not all(col in colnames_list for col in required_columns):
                 self.error_occurred.emit(f"Ошибка: Таблица {self.table_name} не содержит всех необходимых столбцов")
@@ -76,76 +68,80 @@ class DataLoaderThread(QThread):
                 connection.close()
                 return
 
-            if self.total_records is None:
-                cursor.execute(f"SELECT COUNT(*) FROM {self.table_name}")
-                self.total_records = cursor.fetchone()[0]
-            if self.total_records == 0:
+            # Получение множителей
+            multypliers_names = ["VoltMult", "VoltDiv", "CurrMult", "CurrDiv"]
+            query_last = f"SELECT {', '.join(multypliers_colnames)} FROM {self.table_name} ORDER BY timestamp DESC LIMIT 1"
+            cursor.execute(query_last)
+            last_ans = cursor.fetchone()
+            if not last_ans:
+                self.error_occurred.emit("Не удалось получить множители из таблицы")
+                cursor.close()
+                connection.close()
+                return
+            mult_dict = dict(zip(multypliers_names, last_ans))
+
+            # Проверка валидности множителей
+            if any(v is None or v == 0 for v in [mult_dict["VoltDiv"], mult_dict["CurrDiv"]]):
+                self.error_occurred.emit("Ошибка: Множители содержат None или нули")
+                cursor.close()
+                connection.close()
+                return
+
+            # Загрузка всех данных
+            query = f"SELECT {', '.join(rms_colnames)} FROM {self.table_name} ORDER BY timestamp ASC"
+            cursor.execute(query)
+            records = cursor.fetchall()
+            if not records:
                 self.error_occurred.emit(f"Нет данных в таблице {self.table_name}")
                 cursor.close()
                 connection.close()
                 return
 
-            total_chunks = math.ceil(self.total_records / self.chunk_size)
-            offset = self.chunk_index * self.chunk_size
-            query = f"SELECT {', '.join(required_columns)} FROM {self.table_name} ORDER BY timestamp ASC LIMIT {self.chunk_size} OFFSET {offset}"
-            cursor.execute(query)
-            records = cursor.fetchall()
-            if records:
-                self.data_loaded.emit(records, required_columns, self.chunk_index, total_chunks)
-            self.progress_updated.emit(int((self.chunk_index + 1) / total_chunks * 100))
-            cursor.close()
-            connection.close()
-            self.finished_loading_chunk.emit()
+            total_records = len(records)
+            val_names = ["timestamp", "U_A_rms", "U_B_rms", "U_C_rms", "I_A_rms", "I_B_rms", "I_C_rms"]
+            data_dict = dict(zip(val_names, zip(*records)))
 
-        except Exception as e:
-            self.error_occurred.emit(f"Ошибка при загрузке данных: {str(e)}")
+            def get_voltage(adc_rms):
+                if adc_rms is None:
+                    return np.nan
+                try:
+                    return round(((mult_dict["VoltMult"] / mult_dict["VoltDiv"]) / (ADC_raw_max / ADC_full_scale_V)) * (adc_rms >> 2), 2)
+                except (TypeError, ZeroDivisionError):
+                    return np.nan
 
-class RMSCalculatorThread(QThread):
-    data_ready = pyqtSignal(pd.DataFrame, int, int)
-    error_occurred = pyqtSignal(str)
-    progress_updated = pyqtSignal(int)
-    finished_calculating = pyqtSignal()
+            def get_ampertage(adc_rms):
+                if adc_rms is None:
+                    return np.nan
+                try:
+                    return round(((mult_dict["CurrMult"] / mult_dict["CurrDiv"]) / (ADC_raw_max / ADC_full_scale_V)) * (adc_rms >> 2), 2)
+                except (TypeError, ZeroDivisionError):
+                    return np.nan
 
-    def __init__(self, records, required_columns, chunk_index, total_chunks, parent=None):
-        super().__init__(parent)
-        self.records = records
-        self.required_columns = required_columns
-        self.chunk_index = chunk_index
-        self.total_chunks = total_chunks
-
-    def run(self):
-        try:
+            # Преобразование данных
             data_list = []
-            total_records = len(self.records)
-
-            for i, record in enumerate(self.records):
-                record_dict = dict(zip(self.required_columns, record))
-                rec = pdb.LogRecord(record_dict)
-                signals = rec.get_signals()
-
-                if len(signals) == 0:
-                    rms_values = [np.nan] * 6
-                else:
-                    rms_values = []
-                    for channel in range(min(6, signals.shape[1])):
-                        channel_signal = signals[:, channel]
-                        rms_values.append(RMS(channel_signal))
-                    rms_values.extend([np.nan] * (6 - len(rms_values)))
-
-                row = {'timestamp': record_dict['timestamp']}
-                for j, col in enumerate(['U_A_rms', 'U_B_rms', 'U_C_rms', 'I_A_rms', 'I_B_rms', 'I_C_rms']):
-                    row[col] = rms_values[j] if j < len(rms_values) else np.nan
+            for i in range(total_records):
+                row = {
+                    'timestamp': data_dict['timestamp'][i],
+                    'U_A_rms': get_voltage(data_dict['U_A_rms'][i]),
+                    'U_B_rms': get_voltage(data_dict['U_B_rms'][i]),
+                    'U_C_rms': get_voltage(data_dict['U_C_rms'][i]),
+                    'I_A_rms': get_ampertage(data_dict['I_A_rms'][i]),
+                    'I_B_rms': get_ampertage(data_dict['I_B_rms'][i]),
+                    'I_C_rms': get_ampertage(data_dict['I_C_rms'][i])
+                }
                 data_list.append(row)
 
-                if (i + 1) % 10 == 0 or (i + 1) == total_records:
-                    self.progress_updated.emit(int((i + 1) / total_records * 100))
+                if (i + 1) % 100 == 0 or (i + 1) == total_records:
+                    progress = int((i + 1) / total_records * 100)
+                    self.progress_updated.emit(progress)
 
             df = pd.DataFrame(data_list)
-            self.data_ready.emit(df, self.chunk_index, self.total_chunks)
-            self.finished_calculating.emit()
+            self.data_processed.emit(df)
+            cursor.close()
+            connection.close()
 
         except Exception as e:
-            self.error_occurred.emit(f"Ошибка при расчете СКЗ: {str(e)}")
+            self.error_occurred.emit(f"Ошибка при загрузке и обработке данных: {str(e)}")
 
 class TrendsSubwindow(QMdiSubWindow):
     def __init__(self, parent=None):
@@ -343,11 +339,6 @@ class TrendsSubwindow(QMdiSubWindow):
         self.all_valid_indices = []
         self.current_device = None
         self.data_loader = None
-        self.rms_calculator = None
-        self.total_chunks = 0
-        self.processed_chunks = 0
-        self.current_chunk_index = 0
-        self.total_records = None
         self.pending_timestamps = []
         self.is_loading = False
 
@@ -357,7 +348,6 @@ class TrendsSubwindow(QMdiSubWindow):
         self.apply_theme(True)
 
     def apply_theme(self, dark_theme):
-        """Apply the current theme to the TrendsSubwindow"""
         palette = QPalette()
         if dark_theme:
             palette.setColor(QPalette.ColorRole.Window, QColor(53, 53, 53))
@@ -442,7 +432,6 @@ class TrendsSubwindow(QMdiSubWindow):
                 }
             """
 
-        # Apply palette to the window and main widget
         self.setPalette(palette)
         self.main_widget.setPalette(palette)
         self.top_container.setPalette(palette)
@@ -454,7 +443,6 @@ class TrendsSubwindow(QMdiSubWindow):
         self.current_container.setPalette(palette)
         self.plot_widget.setPalette(palette)
 
-        # Apply styles to containers and labels
         self.navigation_container.setStyleSheet(navigation_style)
         self.values_container.setStyleSheet(values_container_style)
         self.datetime_label.setStyleSheet(label_style)
@@ -467,7 +455,6 @@ class TrendsSubwindow(QMdiSubWindow):
         self.i_b_label.setStyleSheet(label_style)
         self.i_c_label.setStyleSheet(label_style)
 
-        # Apply black background to plot widgets
         for col in self.columns:
             plot_widget = self.plot_widgets[col]
             plot_widget.setBackground('k')
@@ -589,10 +576,6 @@ class TrendsSubwindow(QMdiSubWindow):
         self.all_time_labels = []
         self.all_valid_indices = []
         self.pending_timestamps = []
-        self.total_chunks = 0
-        self.processed_chunks = 0
-        self.current_chunk_index = 0
-        self.total_records = None
 
         for col in self.columns:
             plot_widget = self.plot_widgets[col]
@@ -618,88 +601,49 @@ class TrendsSubwindow(QMdiSubWindow):
         self.clear_previous_data()
         self.is_loading = True
         self.current_device = table_name
-        self.status_label.setText(f"Загрузка данных...")
+        self.status_label.setText("Загрузка данных...")
         self.progress_bar.setVisible(True)
         self.progress_label.setText("0%")
 
         if self.data_loader and self.data_loader.isRunning():
             self.data_loader.terminate()
             self.data_loader.wait()
-        if self.rms_calculator and self.rms_calculator.isRunning():
-            self.rms_calculator.terminate()
-            self.rms_calculator.wait()
 
-        self.start_next_chunk_loader()
-
-    def start_next_chunk_loader(self):
-        self.data_loader = DataLoaderThread(self.current_device, self.current_chunk_index, chunk_size=100, total_records=self.total_records)
-        self.data_loader.data_loaded.connect(self.on_data_loaded)
+        self.data_loader = DataLoaderThread(self.current_device)
+        self.data_loader.data_processed.connect(self.on_data_processed)
         self.data_loader.error_occurred.connect(self.on_error_occurred)
         self.data_loader.progress_updated.connect(self.update_progress)
-        self.data_loader.finished_loading_chunk.connect(self.on_chunk_loaded_finished)
+        self.data_loader.finished.connect(self.on_data_loader_finished)
         self.data_loader.start()
 
-    def on_chunk_loaded_finished(self):
+    def on_data_loader_finished(self):
         self.data_loader.deleteLater()
         self.data_loader = None
 
-    def on_data_loaded(self, records, required_columns, chunk_index, total_chunks):
-        self.status_label.setText(f"Рассчет СКЗ...")
-        self.total_chunks = total_chunks
-        if self.total_records is None:
-            self.total_records = total_chunks * 100
-
-        self.rms_calculator = RMSCalculatorThread(records, required_columns, chunk_index, total_chunks)
-        self.rms_calculator.data_ready.connect(self.on_rms_calculated)
-        self.rms_calculator.error_occurred.connect(self.on_error_occurred)
-        self.rms_calculator.progress_updated.connect(self.update_rms_progress)
-        self.rms_calculator.finished_calculating.connect(self.on_calculating_finished)
-        self.rms_calculator.start()
-
-    def on_calculating_finished(self):
-        self.rms_calculator.deleteLater()
-        self.rms_calculator = None
-
-    def on_rms_calculated(self, df, chunk_index, total_chunks):
-        self.all_data = pd.concat([self.all_data, df], ignore_index=True)
-        self.processed_chunks += 1
+    def on_data_processed(self, df):
+        self.all_data = df
         self.plot_data(df)
-        if self.processed_chunks < total_chunks:
-            self.status_label.setText(f"Загрузка данных...")
-        else:
-            self.status_label.setText(f"Данные загружены")
+        self.status_label.setText("Данные загружены")
+        self.is_loading = False
+        self.progress_bar.setVisible(False)
+        self.progress_label.setText("100%")
+        self.process_pending_timestamps()
+        if self.all_time_labels:
+            min_t, max_t = min(self.all_time_labels), max(self.all_time_labels)
+            for vb in self.view_boxes.values():
+                vb.setXRange(min_t, max_t, padding=0.05)
+            if self.lock_cursor_mode:
+                self.move_cursor_to_center()
 
-            # Автоматическое масштабирование для токовых каналов
-            current_cols = ['I_A_rms', 'I_B_rms', 'I_C_rms']
-            for col in current_cols:
-                if col in self.all_data.columns:
-                    max_val = self.all_data[col].max()
-                    if pd.notna(max_val) and max_val < 10:
-                        self.plot_widgets[col].setYRange(0, 10)
-                    else:
-                        self.plot_widgets[col].enableAutoRange()
-
-        self.current_chunk_index += 1
-        if self.processed_chunks < total_chunks:
-            self.start_next_chunk_loader()
-        else:
-            self.is_loading = False
-            self.progress_bar.setVisible(False)
-            self.progress_label.setText("100%")
-            self.process_pending_timestamps()
-            if self.all_time_labels:
-                min_t, max_t = min(self.all_time_labels), max(self.all_time_labels)
-                for vb in self.view_boxes.values():
-                    vb.setXRange(min_t, max_t, padding=0.05)
-                if self.lock_cursor_mode:
-                    self.move_cursor_to_center()
-
-    def update_rms_progress(self, value):
-        chunk_progress = (self.processed_chunks / self.total_chunks) * 100 if self.total_chunks > 0 else 0
-        sub_progress = value / self.total_chunks if self.total_chunks > 0 else 0
-        total_progress = int(chunk_progress + sub_progress)
-        self.progress_bar.setValue(total_progress)
-        self.progress_label.setText(f"{total_progress}%")
+        # Автоматическое масштабирование для токовых каналов
+        current_cols = ['I_A_rms', 'I_B_rms', 'I_C_rms']
+        for col in current_cols:
+            if col in self.all_data.columns:
+                max_val = self.all_data[col].max()
+                if pd.notna(max_val) and max_val < 10:
+                    self.plot_widgets[col].setYRange(0, 10)
+                else:
+                    self.plot_widgets[col].enableAutoRange()
 
     def update_progress(self, value):
         self.progress_bar.setValue(value)
@@ -723,22 +667,19 @@ class TrendsSubwindow(QMdiSubWindow):
             if len(self.time_labels) < 2:
                 return
 
-            offset = len(self.all_time_labels)
-            self.all_time_labels.extend(self.time_labels)
-            self.all_valid_indices.extend([i + offset for i in valid_indices])
+            self.all_time_labels = self.time_labels
+            self.all_valid_indices = valid_indices
 
             time_diffs = np.diff(self.time_labels)
             gap_indices = np.where(time_diffs > 900)[0]
 
             for col in self.columns:
                 plot_widget = self.plot_widgets[col]
-
                 split_indices = np.concatenate([[0], gap_indices + 1, [len(self.time_labels)]])
 
                 for i in range(len(split_indices) - 1):
                     start_idx = split_indices[i]
                     end_idx = split_indices[i + 1]
-
                     if end_idx - start_idx < 2:
                         continue
 
@@ -792,7 +733,6 @@ class TrendsSubwindow(QMdiSubWindow):
         if self.all_time_labels:
             cursor_pos = self.cursors['U_A_rms'].value()
             half_range = 1800
-
             for vb in self.view_boxes.values():
                 vb.setXRange(cursor_pos - half_range, cursor_pos + half_range, padding=0)
 
@@ -817,7 +757,4 @@ class TrendsSubwindow(QMdiSubWindow):
         if hasattr(self, 'data_loader') and self.data_loader and self.data_loader.isRunning():
             self.data_loader.terminate()
             self.data_loader.wait()
-        if hasattr(self, 'rms_calculator') and self.rms_calculator and self.rms_calculator.isRunning():
-            self.rms_calculator.terminate()
-            self.rms_calculator.wait()
         super().closeEvent(event)
