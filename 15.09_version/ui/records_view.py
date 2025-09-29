@@ -1,6 +1,3 @@
-# Обновленный файл: records_view.py
-# Добавлен метод apply_theme для поддержки переключения тем.
-
 from PyQt6.QtWidgets import QMdiSubWindow, QTableView, QAbstractItemView, QVBoxLayout, QHBoxLayout, QPushButton, QMessageBox, QLineEdit, QWidget, QHeaderView
 from PyQt6.QtGui import QIcon, QAction, QPalette, QColor
 from PyQt6.QtCore import Qt, QAbstractTableModel, QModelIndex
